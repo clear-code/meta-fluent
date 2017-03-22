@@ -1,0 +1,12 @@
+OpenEmbedded/Yocto BSP layer for fluent-bit
+=============================================
+
+This layer provides fluent-bit recipes for use with OpenEmbedded
+and/or Yocto.
+
+This layer inherits cmake recipe.
+
+Contributing
+------------
+
+Bug reports and pull requests are welcome on GitHub at https://github.com/[USERNAME]/meta-fluent.
