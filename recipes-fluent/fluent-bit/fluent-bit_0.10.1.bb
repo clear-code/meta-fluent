@@ -22,4 +22,6 @@ EXTRA_OECMAKE = "-DFLB_XBEE=1 -DFLB_WITHOUT_EXAMPLES=On"
 
 inherit cmake
 
-FILES_${PN} += "${systemd_unitdir}/system/fluent-bit.service"
+PACKAGES += "${PN}-service"
+
+FILES_${PN}-service = "${systemd_unitdir}/system/fluent-bit.service"
