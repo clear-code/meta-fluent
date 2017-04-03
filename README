@@ -10,3 +10,9 @@ Contributing
 ------------
 
 Bug reports and pull requests are welcome on GitHub at https://github.com/clear-code/meta-fluent.
+
+Note
+----
+
+Currently, this meta layer is targeted to RZ/G board.
+v0.10.1 is confirmed to be able to compile and work in this board.
