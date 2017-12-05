@@ -10,13 +10,13 @@ LICENSE = "Apache-2.0"
 LIC_FILES_CHKSUM = "file://LICENSE;md5=2ee41112a44fe7014dce33e26468ba93"
 SECTION = "net"
 
-SRC_URI = "https://github.com/fluent/fluent-bit/archive/v0.11.4.tar.gz;name=archive \
+SRC_URI = "https://github.com/fluent/fluent-bit/archive/v0.12.10.tar.gz;name=archive \
           "
-SRC_URI[archive.md5sum] = "76e7e2636eab27f6e3b8ff71e2e38c9a"
-SRC_URI[archive.sha256sum] = "d3d3b53f0877e3d9df39cdfbac7eb78519df11cb1e8adc6bd78eb535895dd57a"
+SRC_URI[archive.md5sum] = "befc4db476cae715e42ef806c11bb0a0"
+SRC_URI[archive.sha256sum] = "1f20e3580948f819206e01cb649614189ec5f565063077a48e4bf2f31982f6eb"
 
 PR = "r0"
-PV = "0.11.4"
+PV = "0.12.10"
 
 S = "${WORKDIR}/fluent-bit-${PV}"
 HOST_SYS_ARCH = "${HOST_ARCH}"
