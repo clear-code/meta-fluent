@@ -28,3 +28,6 @@ inherit cmake
 PACKAGES += "${PN}-service"
 
 FILES_${PN}-service = "${systemd_unitdir}/system/fluent-bit.service"
+FILES_${PN} = "${bindir}/fluent-bit"
+FILES_${PN} += "${sysconfdir}/fluent-bit/*.conf"
+INSANE_SKIP_${PN}-dev = "ldflags staticdev libdir dev-elf"
