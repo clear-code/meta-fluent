@@ -15,7 +15,7 @@ SRC_URI = "https://github.com/fluent/fluent-bit/archive/v0.12.10.tar.gz;name=arc
 SRC_URI[archive.md5sum] = "befc4db476cae715e42ef806c11bb0a0"
 SRC_URI[archive.sha256sum] = "1f20e3580948f819206e01cb649614189ec5f565063077a48e4bf2f31982f6eb"
 
-PR = "r0"
+PR = "r1"
 PV = "0.12.10"
 
 S = "${WORKDIR}/fluent-bit-${PV}"
@@ -28,3 +28,6 @@ inherit cmake
 PACKAGES += "${PN}-service"
 
 FILES_${PN}-service = "${systemd_unitdir}/system/fluent-bit.service"
+FILES_${PN} = "${bindir}/fluent-bit"
+FILES_${PN} += "${sysconfdir}/fluent-bit/*.conf"
+INSANE_SKIP_${PN}-dev = "ldflags staticdev libdir dev-elf"
